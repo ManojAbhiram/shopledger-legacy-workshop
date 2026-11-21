@@ -10,12 +10,14 @@ ShopLedger runs on Node.js with Express 4, CommonJS modules, and `body-parser` f
 - `public/` contains the point-of-sale UI, order register, khata ledger, and audit view.
 - `routes/` contains the product, order, customer, and report routers.
 - `lib/` handles orders, stock, pricing, tax, coupons, khata balances, invoices, reports, and dates. `lib/store.js` reads and writes `data/db.json`.
+- [README.md](README.md) links to the practice tutorial, operator workflows, API reference, and architecture in `docs/`.
 
 ## Commands
 
 - `npm install` installs the dependencies declared in `package.json`.
 - `npm start` runs `node server.js` on port 3000 by default. Set `PORT` to use another port.
 - `node --check routes/orders.js` checks JavaScript syntax without running the file. Substitute the path you changed.
+- `node --test` runs the in-memory regression suites in `test/`.
 - `npm test` is a placeholder that exits with an error. There is no build script.
 
 ## Contributor Rules
